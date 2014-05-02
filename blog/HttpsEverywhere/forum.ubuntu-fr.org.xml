@@ -1,0 +1,6 @@
+<ruleset name="Forum Ubuntu fr">
+  <target host="forum.ubuntu-fr.org" />
+  <target host="www.forum.ubuntu-fr.org" />
+
+  <rule from="^http://(www\.)?forum.ubuntu-fr\.org/" to="https://forum.ubuntu-fr.org/"/>
+</ruleset>

@@ -1,0 +1,78 @@
+# Conky settings #
+background no
+update_interval 1
+cpu_avg_samples 2
+net_avg_samples 2
+override_utf8_locale yes
+double_buffer yes
+no_buffers yes
+text_buffer_size 2048
+#imlib_cache_size 0
+#temperature_unit fahrenheit
+# Window specifications #
+own_window yes
+own_window_type override
+own_window_transparent yes
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+border_inner_margin 10
+border_outer_margin 0
+minimum_size 200 250
+maximum_width 200
+alignment br
+gap_x 35
+gap_y 55
+# Graphics settings #
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+# Text settings #
+use_xft yes
+xftfont Caviar Dreams:size=8
+xftalpha 0.5
+uppercase no
+temperature_unit celsius
+default_color FFFFFF
+
+
+# Lua Load  #
+##background
+lua_load ~/.conky/draw_bg.lua
+lua_draw_hook_pre draw_bg
+
+#clock
+lua_load ~/.conky/clock_rings.lua
+lua_draw_hook_post clock_rings
+
+
+TEXT
+${voffset 8}${color D60650}${font Caviar Dreams:size=16}${time %A}${font}${voffset -8}${alignr 50}${color FFFFFF}${font Caviar Dreams:size=38}${time %e}${font}
+${color FFFFFF}${voffset -30}${color FFFFFF}${font Caviar Dreams:size=18}${time %b}${font}${voffset -3} ${color FFFFFF}${font Caviar Dreams:size=20}${time %Y}${font}${color D60650}${hr}
+${voffset 140}${font Caviar Dreams:size=10}${alignr}Météo${font}
+${font Caviar Dreams:size=8}${color FFFFFF}${alignr}${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ LFRS temperature } °C${font}
+${font Caviar Dreams:size=8}${color cccccc}${alignr}${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ LFRS humidity} %
+${font Caviar Dreams:size=8}${color cccccc}${alignr}${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ LFRS pressure} hPa
+${image ~/.conky/debian-logo.png -p 55,110 -s 60x60}
+
+${color cccccc}${font Caviar Dreams:size=7}${alignr 162}${voffset 3}${memperc}%
+${color D60650}${font Caviar Dreams:size=8}${alignr 162}RAM
+${color cccccc}${font Caviar Dreams:size=7}${alignr 138}${cpu cpu0}%
+${color cccccc}${font Caviar Dreams:size=7}${alignr 138}${cpu cpu1}%
+${color D60650}${font Caviar Dreams:size=8}${alignr 138}CPU
+${color cccccc}${font Caviar Dreams:size=7}${alignr 110}${voffset 39}${swapperc}%
+${color D60650}${font Caviar Dreams:size=8}${alignr 110}swap
+${color cccccc}${font Caviar Dreams:size=7}${alignr 87}${fs_used_perc /}%
+${color cccccc}${font Caviar Dreams:size=7}${alignr 87}${fs_used_perc /home}%
+${color D60650}${font Caviar Dreams:size=8}${alignr 87}disk
+${color cccccc}${font Caviar Dreams:size=7}${alignr 50}${voffset 40}${downspeed man0}
+${color cccccc}${font Caviar Dreams:size=7}${alignr 50}${upspeed man0}
+${color D60650}${font Caviar Dreams:size=8}${alignr 50}wifi
+
+
+${color cccccc}${font Caviar Dreams:size=8}${sysname} ${kernel} ${color D60650}${font Caviar Dreams:size=8}${alignr}${machine}
+${color cccccc}${font Caviar Dreams:size=8}$uptime ${color D60650}${font Caviar Dreams:size=8}${alignr}$loadavg
+${color cccccc}${font Caviar Dreams:size=8}man0 ${wireless_link_qual man0} ${color D60650}${font Caviar Dreams:size=8}${alignr}${addr man0}
+${color cccccc}${font Caviar Dreams:size=8}temp0 ${execi 10 cat /sys/devices/pci0000:00/0000:00:18.3/temp1_input|cut -c1-2}°C ${alignr}${color d60650}${font Caviar Dreams:size=8}temp1 ${execi 10 cat /sys/devices/pci0000:00/0000:00:18.3/temp3_input|cut -c1-2}°C
+
+${color D60650}${font Caviar Dreams:size=8}${alignr 200}${downspeedgraph man0}
+${color D60650}${font Caviar Dreams:size=8}${alignr 200}${upspeedgraph man0}

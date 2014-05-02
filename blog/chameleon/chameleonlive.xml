@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper>
+    <name>Chameleon_Live</name>
+    <filename>/usr/share/backgrounds/Chameleon/Chameleon.xml</filename>
+    <options>zoom</options>
+  </wallpaper>
+</wallpapers>

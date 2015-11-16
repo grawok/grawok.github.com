@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Billet blog
+title: Billet-Blog
 ---
 
 Lorem ipsum

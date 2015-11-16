@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Billet-Blog
+permalink: /Billet-Blog/
 ---
 
 Lorem ipsum

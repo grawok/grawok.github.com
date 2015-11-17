@@ -120,6 +120,12 @@ img {
   color: $gray;
 }
 
+.etiquette {
+ font-style: italic;
+ color: $gray;
+ font: 12px/1 $helvetica;
+
+}
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;

@@ -10,11 +10,11 @@ layout: default
   </div>
 
   <div class="date">
-    le {{ page.date | date: "%B %e, %Y" }}
+    {{ page.date | date: "%B %e, %Y" }}
   </div>
 
   <div class="etiquette">
-   {{ page.tags }}
+   tags: {{ page.tags }}
   </div>
   {% include disqus.html %}
 </article>

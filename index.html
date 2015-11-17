@@ -7,13 +7,14 @@ layout: default
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <div class="etiquette"> <i>le {{ post.date | date_to_string }}</i></div>
 
       <div class="entry">
         {{ post.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">lire la suite</a> 
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">lire la suite</a>
+     <div class="etiquette"> <i>le {{ post.date | date_to_string }}</i></div>
+
     </article>
   {% endfor %}
 </div>

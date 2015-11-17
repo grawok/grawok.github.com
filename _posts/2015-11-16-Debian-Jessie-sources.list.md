@@ -1,0 +1,21 @@
+---
+layout: post
+title: Debian Jessie sources.list
+category: debian
+tags: linux, debian
+published : true
+---
+
+La liste des dépots Debian Jessie à copier dans /etc/apt/sources.list:
+
+```bash
+deb http://ftp.fr.debian.org/debian/ jessie main non-free contrib
+deb http://security.debian.org/ jessie/updates main contrib non-free
+deb http://ftp.fr.debian.org/debian/ jessie-proposed-updates main contrib non-free
+deb http://www.deb-multimedia.org jessie main non-free
+```
+*Note* : pour le miroir deb-multimedia, il est nécessaire d’installer le keyring du dépôt :
+
+```
+# apt-get install deb-multimedia-keyring
+```

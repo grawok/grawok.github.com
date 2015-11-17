@@ -24,9 +24,9 @@ search_omit: true
   <!-- Search result template -->
   <script type="text/x-template" id="search-result">
     <div>
-      <h1><a href="##Url##">##Title##</a></h1>
-      <h2><a href="##Url##">##Date##</a></h2>
-      <a href="##Url##">Read &ldquo;##Title##&rdquo;</a>
+      <h3><a href="##Url##">##Title##</a></h3>
+      <h3><a href="##Url##">{{ post.time | date_to_string }}</a></h3>
+      <a href="##Url##">lire &ldquo;##Title##&rdquo;</a>
     </div>
   </script>
 

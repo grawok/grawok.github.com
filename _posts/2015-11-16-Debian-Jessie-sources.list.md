@@ -6,7 +6,7 @@ tags: linux, debian
 published : true
 ---
 
-![Logo](/images/logos/jessie.jpeg) La liste des dépots Debian Jessie à copier dans /etc/apt/sources.list:
+![Logo](/images/logos/debian.png) La liste des dépots Debian Jessie à copier dans /etc/apt/sources.list:
 
 ```bash
 deb http://ftp.fr.debian.org/debian/ jessie main non-free contrib

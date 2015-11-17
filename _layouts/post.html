@@ -9,12 +9,8 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="date">
-    {{ page.date | date_to_string }}
-  </div>
-
   <div class="etiquette">
-   tags: {{ page.tags }}
+    {{ page.date | date_to_string }} - tags: {{ page.tags }}
   </div>
   {% include disqus.html %}
 </article>

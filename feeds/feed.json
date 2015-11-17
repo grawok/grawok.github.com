@@ -11,7 +11,7 @@ layout: null
                 "title": {{item.title | jsonify}},
                 "content": {{item.content | markdownify | strip_html | jsonify}},
                 "link": "{{ site.baseurl }}{{ item.url }}",
-                "date": "{{ item.date }}",
+                "date": "{{ item.date | date_to_string }}",
                 "excerpt": "{{ item.snippet }}",
                 "search_omit": "{{ item.search_omit }}"
             }
@@ -28,7 +28,7 @@ layout: null
         "title": {{post.title | jsonify}},
         "content": {{post.content | markdownify | strip_html | jsonify}},
         "link": "{{ site.baseurl }}{{ post.url }}",
-        "date": "{{ post.date }}",
+        "date": "{{ post.date | date_to_string }}",
         "excerpt": "{{ post.snippet }}",
         "search_omit": "{{ post.search_omit }}"
     }

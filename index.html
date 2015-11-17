@@ -10,7 +10,7 @@ layout: default
         {{ post.excerpt }}
       </div>
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">lire la suite</a>
-     <div class="etiquette"> {{ post.date | date_to_string }} - {{ post.id }} - {{ post.path }}</div>
+     <div class="etiquette"> {{ post.date | date_to_string }} - {{ post.id }} - {{ post.title }}</div>
     </article>
   {% endfor %}
 </div>

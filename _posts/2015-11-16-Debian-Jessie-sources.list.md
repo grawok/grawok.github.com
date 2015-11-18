@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 ---
 <table style="width:100%">
   <tr>
-    <td width="64">![Logo][img1]</td>
+    <td width="64">![Logo]({{ site.url }}/images/logos/debian.png)</td>
     <td>
     La liste des dépots Debian Jessie à copier dans /etc/apt/sources.list
     </td>
@@ -27,5 +27,3 @@ deb http://www.deb-multimedia.org jessie main non-free
 ```
 # apt-get install deb-multimedia-keyring
 ```
-
-[img1]: {{ site.url }}/images/logos/debian.png

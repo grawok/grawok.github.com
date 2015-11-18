@@ -27,3 +27,4 @@ deb http://www.deb-multimedia.org jessie main non-free
 ```
 # apt-get install deb-multimedia-keyring
 ```
+![Logo]({{ site.url }}/images/logos/debian.png)

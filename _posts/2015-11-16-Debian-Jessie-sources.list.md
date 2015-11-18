@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 <table style="width:100%">
   <tr>
     <td width="64"><img src="{{ site.url }}/images/logos/debian.png"></td>
-    <td>
+    <td valign="center">
     La liste des dépots Debian Jessie à copier dans /etc/apt/sources.list
     </td>
   </tr>

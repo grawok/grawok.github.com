@@ -4,9 +4,17 @@ title: Debian Jessie sources.list
 category: debian
 tags: linux, debian
 published : true
+excerpt_separator: <!--more-->
 ---
-
-![Logo](/images/logos/debian.png) La liste des dépots Debian Jessie à copier dans /etc/apt/sources.list:
+<table style="width:100%">
+  <tr>
+    <td width="64">![Logo][img1]</td>
+    <td>
+    La liste des dépots Debian Jessie à copier dans /etc/apt/sources.list
+    </td>
+  </tr>
+</table> 
+<!--more-->
 
 ```bash
 deb http://ftp.fr.debian.org/debian/ jessie main non-free contrib
@@ -19,3 +27,5 @@ deb http://www.deb-multimedia.org jessie main non-free
 ```
 # apt-get install deb-multimedia-keyring
 ```
+
+[img1]: {{ site.url }}/images/logos/debian.png

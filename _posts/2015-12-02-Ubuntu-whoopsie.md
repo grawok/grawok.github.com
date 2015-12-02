@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 ---
 <table style="width:100%">
   <tr>
-    <td width="64"><img src="{{ site.url }}/images/logos/default.png"></td>
+    <td width="64"><img src="{{ site.url }}/images/logos/ubuntu.png"></td>
     <td>
     
     </td>

@@ -27,8 +27,3 @@ deb http://ftp.fr.debian.org/debian/ stretch-backports main contrib non-free
 deb http://security.debian.org/	stretch/updates main contrib non-free
 
 ```
-*Note* : pour le miroir deb-multimedia, il est nécessaire d’installer le keyring du dépôt :
-
-```
-# apt-get install deb-multimedia-keyring
-```

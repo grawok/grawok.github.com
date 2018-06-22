@@ -253,7 +253,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: none;
 }
 
 .posts > .post:last-child {
@@ -264,7 +264,7 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: none;
     padding: 0.1em 1em;
     color: $gray;
     font-size: 16px;

@@ -17,11 +17,11 @@ excerpt_separator: <!--more-->
 <!--more-->
 
 
-  ## main
-  deb http://ftp.fr.debian.org/debian/ stretch main contrib non-free
-  deb http://ftp.fr.debian.org/debian/ stretch-updates main contrib non-free
-  deb http://ftp.fr.debian.org/debian/ stretch-proposed-updates main contrib non-free
-  ## backports
-  deb http://ftp.fr.debian.org/debian/ stretch-backports main contrib non-free
-  ## security
-  deb http://security.debian.org/	stretch/updates main contrib non-free
+ ## main
+ deb http://ftp.fr.debian.org/debian/ stretch main contrib non-free
+ deb http://ftp.fr.debian.org/debian/ stretch-updates main contrib non-free
+ deb http://ftp.fr.debian.org/debian/ stretch-proposed-updates main contrib non-free
+ ## backports
+ deb http://ftp.fr.debian.org/debian/ stretch-backports main contrib non-free
+ ## security
+ deb http://security.debian.org/	stretch/updates main contrib non-free
